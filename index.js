@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require ("inquirer")
+const fs = require ("fs")
 const generateMarkdown = require ("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
 const questions = [{ 
@@ -8,39 +9,36 @@ const questions = [{
     name: "Title"
 },{
     type: "input",
-    message: "Project description",
-    name: "Descript"
-},{
+    message: "Description",
+    name: "Description"
+},
+{
     type: "input",
-    message: "Table of contents",
-    name: "content"
-},{
-    type: "input",
-    message: "License?",
-    name: "License",
-},{
-    type: "input",
-    message: "Installation instructions",
+    message: "Installation",
     name: "Installation"
 },{
     type: "input",
-    message: "Project usage",
+    message: "Usage",
     name: "Usage"
 },{
     type: "input",
-    message: "Credits info",
+    message: "Credits",
     name: "Credits"
 },{
     type: "input",
-    message: "Badges?",
+    message: "License",
+    name: "License",
+},{
+    type: "input",
+    message: "Badges",
     name: "Badges"
 },{
     type: "input",
-    message: "Features?",
+    message: "Features",
     name: "Features"
 },{
     type: "input",
-    message: "Tests?",
+    message: "Tests",
     name: "Tests"
 }];
 
