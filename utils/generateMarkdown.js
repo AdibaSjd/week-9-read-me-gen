@@ -12,8 +12,9 @@ function renderLicenseBadge(license) {
   }
   else if (license === 'MIT') {
    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-  }
+  } else {
   return ''
+  }
 }
 // TODO: Create a function that returns the license link 
 // If there is no license, return an empty string
@@ -29,8 +30,9 @@ function renderLicenseLink(license) {
   }
   else if (license === 'MIT') {
    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-  }
+  } else {
   return ''
+  }
 }
 // TODO: Create a function that returns the license link 
 // If there is no license, return an empty string
@@ -46,8 +48,9 @@ function renderLicenseSection(license) {
   }
   else if (license === 'MIT') {
    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-  }
+  } else {
   return ''
+  }
 };
 
 
@@ -55,6 +58,15 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.Title}
   ${renderLicenseBadge(data.license)}
+
+
+  ## Badges
+  ${data.Badges}
+
+  ## License
+   ${data.License}
+   ${renderLicenseSection(data.license)}
+   ${renderLicenseLink(data.license)} 
 
   ## Description 
   ${data.Description}
@@ -77,15 +89,7 @@ function generateMarkdown(data) {
 
   ## Credits 
   ${data.Credits}
-
-  ## License
-   ${data.License}
-   ${renderLicenseSection(data.license)}
-   ${renderLicenseLink(data.license)}
-
-  ## Badges
-  ${data.Badges}
-
+  
   ## Features
   ${data.Features}
 
