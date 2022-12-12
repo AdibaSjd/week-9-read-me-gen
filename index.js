@@ -11,10 +11,6 @@ const questions = [{
     name: "Title"
 },{
     type: "input",
-    message: "Badges",
-    name: "Badges"
-},{
-    type: "input",
     message: "Description",
     name: "Description"
 },
@@ -32,9 +28,9 @@ const questions = [{
     name: "Credits"
 },{
     type: "list",
-    message: "License",
-    name: "License",
-    choices:['MIT', 'ISC', 'WTFP','Zlib'],
+    message: "license",
+    name: "license",
+    choices:['MIT', 'ISC', 'WTFPL','Zlib'],
     filter(val) {
         return val.toLowerCase();
     }

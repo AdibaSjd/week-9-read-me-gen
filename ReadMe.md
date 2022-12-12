@@ -1,35 +1,38 @@
-# a
+# ddd
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description 
-  a
+  dddd
 
   ## Table of Content 
-  - [Description](#Description)
-  - [Intallisation](#Installisation)
-  - [Usage](#Usage)
-  - [credits](#Credits)
-  - [license](#License)
-  - [Badges](#Badges)
-  - [Features](#Features)
-  - [Tests](#Tests)
+  • [Description](#Description)
+  • [Installation](#Installation)
+  • [Usage](#Usage)
+  • [credits](#Credits) 
+  • [license](#License) 
+  • [Badges](#Badges)
+  • [Features](#Features)
+  • [Tests](#Tests)
 
-  ## Installation
-  
 
-  ## Usage 
-  a
-
-  ## Credits 
-  a
 
   ## License
+    licensed under the mit license
+
+  ## license
    mit
+   
+  ## Installation
+  dddd
 
-  ## Badges
-  s
+  ## Usage 
+  dddd
 
+  ## Credits 
+  dddd
+  
   ## Features
-  s
+  ddd
 
   ## Tests
-  s  
+  ddd  
