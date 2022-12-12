@@ -1,7 +1,7 @@
-# ad
+# a
 
   ## Description 
-  ad
+  a
 
   ## Table of Content 
   - [Description](#Description)
@@ -14,22 +14,22 @@
   - [Tests](#Tests)
 
   ## Installation
-  ad
+  
 
   ## Usage 
-  ad
+  a
 
   ## Credits 
-  ad
+  a
 
   ## License
-   ad
+   mit
 
   ## Badges
-  ad
+  s
 
   ## Features
-  ad
+  s
 
   ## Tests
-  ad  
+  s  

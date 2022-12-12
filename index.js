@@ -1,12 +1,18 @@
 // TODO: Include packages needed for this application
 const inquirer = require ("inquirer")
 const fs = require ("fs")
-const generateMarkdown = require ("./utils/generateMarkdown")
+const generateMarkdown = require ("./utils/generateMarkdown");
+const { default: Choice } = require("inquirer/lib/objects/choice");
+
 // TODO: Create an array of questions for user input
 const questions = [{ 
     type: "input",
     message: "Project title?",
     name: "Title"
+},{
+    type: "input",
+    message: "Badges",
+    name: "Badges"
 },{
     type: "input",
     message: "Description",
@@ -25,13 +31,13 @@ const questions = [{
     message: "Credits",
     name: "Credits"
 },{
-    type: "input",
+    type: "list",
     message: "License",
     name: "License",
-},{
-    type: "input",
-    message: "Badges",
-    name: "Badges"
+    choices:['MIT', 'ISC', 'WTFP','Zlib'],
+    filter(val) {
+        return val.toLowerCase();
+    }
 },{
     type: "input",
     message: "Features",
@@ -40,7 +46,7 @@ const questions = [{
     type: "input",
     message: "Tests",
     name: "Tests"
-}];
+}]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
