@@ -44,21 +44,17 @@ function generateMarkdown(data) {
   ${data.Description}
 
   ## Table of Content 
-  • [Description](#Description)
-  • [Installation](#Installation)
-  • [Usage](#Usage)
-  • [credits](#Credits) ${renderLicenseLink(data.license)} 
-  • [Badges](#Badges)
-  • [Features](#Features)
-  • [Tests](#Tests)
+  • [Description](#Description)\n
+  • [Installation](#Installation)\n
+  • [Usage](#Usage)\n
+  • [credits](#Credits)\n ${renderLicenseLink(data.license)}\n
+  • [Contriutors](#Contributors)\n
+  • [Tests](#Tests)\n
+  • [Questions](#Questions)\n
+  
 
 
 
-  ${renderLicenseSection(data.license)}
-
-  ## license
-   ${data.license}
-   
   ## Installation
   ${data.Installation}
 
@@ -67,12 +63,21 @@ function generateMarkdown(data) {
 
   ## Credits 
   ${data.Credits}
+
+  ${renderLicenseSection(data.license)}
   
-  ## Features
-  ${data.Features}
+  ## license
+   ${data.license}
+  
+  ## Contributors
+  ${data.Contributors}
 
   ## Tests
   ${data.Tests}  
+
+  ## Questions
+  ${data.Questions}  
+  
 `;
 }
 

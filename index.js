@@ -36,13 +36,18 @@ const questions = [{
     }
 },{
     type: "input",
-    message: "Features",
-    name: "Features"
+    message: "Contributors",
+    name: "Contributors"
 },{
     type: "input",
     message: "Tests",
     name: "Tests"
-}]
+},{
+    type: "input",
+    message: "Questions",
+    name: "Questions"
+}
+]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
